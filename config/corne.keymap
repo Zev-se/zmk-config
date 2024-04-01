@@ -9,6 +9,22 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    macros {
+        bixt: bixt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp B &kp I &kp X &kp T &kp DOT &kp S &kp E>;
+            label = "BIXT";
+        };
+
+        malarenergi: malarenergi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp M &kp A &kp L &kp A &kp R &kp E &kp N &kp E &kp R &kp G &kp I &kp DOT &kp S &kp E>;
+            label = "MALARENERGI";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -29,10 +45,10 @@
 
         Symbols {
             bindings = <
-&trans  &none   &none       &kp LBRC              &kp RBRC               &kp LT      &kp GT     &kp APOSTROPHE    &kp PIPE   &none     &none      &to 4
-&trans  &kp AT  &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp HASH    &kp ASTRK  &kp EXCL          &kp PRCNT  &kp AMPS  &kp QMARK  &none
-&trans  &none   &kp CARET   &kp LBKT              &kp RBKT               &none       &kp TILDE  &kp SINGLE_QUOTE  &kp DQT    &none     &none      &kp BACKSLASH
-                            &trans                &trans                 &trans      &trans     &trans            &trans
+&trans  &bixt         &none       &kp LBRC              &kp RBRC               &kp LT      &kp GT     &kp APOSTROPHE    &kp PIPE   &none     &none      &to 4
+&trans  &kp AT        &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp HASH    &kp ASTRK  &kp EXCL          &kp PRCNT  &kp AMPS  &kp QMARK  &none
+&trans  &malarenergi  &kp CARET   &kp LBKT              &kp RBKT               &none       &kp TILDE  &kp SINGLE_QUOTE  &kp DQT    &none     &none      &kp BACKSLASH
+                                  &trans                &trans                 &trans      &trans     &trans            &trans
             >;
         };
 
