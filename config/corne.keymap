@@ -36,19 +36,19 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F   &kp P           &kp B               &kp J           &kp L  &kp U          &kp Y    &kp LEFT_BRACKET  &kp SQT
-&kp LCTRL  &kp A  &kp R  &kp S   &mt LEFT_ALT T  &kp G               &kp M           &kp N  &kp E          &kp I    &kp SEMI          &kp SEMICOLON
-&kp LSHFT  &kp Z  &kp X  &kp C   &kp D           &kp V               &kp K           &kp H  &kp COMMA      &kp DOT  &kp MINUS         &kp SLASH
+&kp TAB    &kp Q  &kp W  &kp F   &kp P           &kp B               &kp J           &kp L  &kp U          &kp Y    &kp LEFT_BRACE  &kp SQT
+&kp ESC    &kp A  &kp R  &kp S   &mt LEFT_ALT T  &kp G               &kp M           &kp N  &kp E          &kp I    &kp O           &kp SEMICOLON
+&kp CARET  &kp Z  &kp X  &kp C   &kp D           &kp V               &kp K           &kp H  &kp COMMA      &kp DOT  &kp SLASH       &kp LS(N7)
                          &tog 2  &mo 3           &mt LSHIFT SPACE    &mt LGUI ENTER  &mo 1  &kp BACKSPACE
             >;
         };
 
         Symbols {
             bindings = <
-&trans  &bixt         &none       &kp LBRC              &kp RBRC               &kp LT      &kp GT     &kp APOSTROPHE    &kp PIPE   &none     &none      &to 4
-&trans  &kp AT        &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp HASH    &kp ASTRK  &kp EXCL          &kp PRCNT  &kp AMPS  &kp QMARK  &none
-&trans  &malarenergi  &kp CARET   &kp LBKT              &kp RBKT               &none       &kp TILDE  &kp SINGLE_QUOTE  &kp DQT    &none     &none      &kp BACKSLASH
-                                  &trans                &trans                 &trans      &trans     &trans            &trans
+&trans  &bixt             &none                  &kp RA(N7)  &kp RA(N0)  &kp NUBS            &kp LS(NUBS)  &kp EQUAL         &kp RA(LEFT_BRACKET)  &none       &none          &to 4
+&trans  &kp RA(NUMBER_2)  &kp RA(NUMBER_4)       &kp LS(N8)  &kp LS(N9)  &kp LS(NUMBER_3)    &kp PIPE      &kp EXCL          &kp PRCNT             &kp LS(N6)  &kp LS(MINUS)  &none
+&trans  &malarenergi      &kp LS(RIGHT_BRACKET)  &kp RA(N8)  &kp LA(N9)  &none               &kp RA(RBKT)  &kp SINGLE_QUOTE  &kp DQT               &none       &none          &kp RA(MINUS)
+                                                 &trans      &trans      &trans              &trans        &trans            &trans
             >;
         };
 
@@ -60,10 +60,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none     &kp CARET  &kp N7  &kp N8  &kp N9  &kp MINUS  &none
-&trans        &none         &kp F5        &kp F11       &kp F12       &none     &kp MINUS  &kp N4  &kp N5  &kp N6  &kp PLUS   &kp ASTERISK
-&bt BT_CLR    &none         &none         &none         &none         &none     &kp UNDER  &kp N1  &kp N2  &kp N3  &kp EQUAL  &kp SLASH
-                                          &trans        &trans        &trans    &trans     &kp N0  &trans
+&bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none     &kp LS(LEFT_BRACE)     &kp N7  &kp N8  &kp N9  &kp SLASH   &none
+&trans        &none         &kp F5        &kp F11       &kp F12       &none     &kp LS(SLASH)          &kp N4  &kp N5  &kp N6  &kp MINUS   &kp ASTERISK
+&bt BT_CLR    &none         &none         &none         &none         &none     &kp RA(RIGHT_BRACKET)  &kp N1  &kp N2  &kp N3  &kp LS(N0)  &kp LS(N7)
+                                          &trans        &trans        &trans    &trans                 &kp N0  &trans
             >;
         };
 
